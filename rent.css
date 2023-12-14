@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    /* top: 0; */
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --main-color: #fe5b3d;
+    --second-color: #ffac38;
+    --text-color: #444;
+    --gradient: linear-gradient(#fe5b3d #ffac38);
+}
+section{
+    padding: 50px 100px;
+}
+
+
+.navbar{ 
+    position: fixed-top;
+    width: 100%;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eeeff1;
+    padding: 15px 45px;
+}
+
+.logo img{
+    width: 40px;
+}
+.content{
+    display: flex;
+}
+.content li{
+    position: relative;
+}
+.content a{
+    font-size: 1rem;
+    padding: 10px 20px ;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+.content a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: var(--gradient);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: .5s;
+}
+.content a:hover::after{
+    width: 100%;
+}
+.header-btn a{
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.header-btn .sign-in{
+    background: #474fa0;
+    color: #fff;
+    border-radius:  0.5rem;
+}
+.header-btn .sign-in:hover{
+    background-color: var(--main-color);
+}
+
+/* Home */
+.home{
+    width: 100%;
+    height: 95vh;
+    background: url(img/Car\ Website\ –\ 1@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: grid; */
+    align-items: center;
+    /* margin-bottom: 50px; */
+}
+.container{
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.container h1{
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 45px;
+    color: var(--main-color);
+}
+.car-container{
+    padding-bottom: 10px;
+    display: inblock;
+}
+.car-container input{
+    border: none;
+    outline: none;
+    /* background: red; */
+}
+.car-container button{
+    background: red;
+    width: 350px;
+    background: #fff;
+    border-radius: 10px;
+    background: var(--main-color);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 100px;
+}
+/* .btn button{
+    background: var(--main-color);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 100px; 
+} */
+#cart-container h2{
+    color: var(--second-color);
+}
+
+/* COPYRIGHT */
+.footer{
+    height: 50px;
+    background: var(--gradient);
+}
+.footer .copyright{
+    /* padding: 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .copyright a{
+    color: #444 ;
+    padding: 10px;
+    font-size: 22px;
+}
+.copyright .social{
+    color: #444;
+}
